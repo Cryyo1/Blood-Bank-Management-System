@@ -1,0 +1,26 @@
+.pane{
+    -fx-background-color: white;
+    -fx-background-radius: 30px;
+}
+
+
+table-view {
+    -fx-background-color: transparent;
+    -fx-font-size: 16;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="banque_du_sang" uuid="c15ba0c7-eb8b-41e7-a6f3-6d76648dd73f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:G:\Coding\IntelliJ IDEA 2020.2.4\Projects\Banque_de_sang\src\Db_Handlers\banque_du_sang.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

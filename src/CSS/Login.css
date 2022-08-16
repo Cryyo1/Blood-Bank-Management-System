@@ -1,0 +1,23 @@
+.root{
+    -fx-background-color: linear-gradient(from 100% 100% to 0% 0%,#B6FAF9, #FFFFFF);
+    -fx-font-family: 'Nunito' ;
+}
+
+.button{
+    -fx-background-color: #b80606;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Nunito' ;
+}
+#label_top{
+    -fx-font-family: 'Nunito' ;
+    -fx-font-weight: bold ;
+    -fx-font-size:12pt ;
+}
+#signUpButton{
+    -fx-background-color: null;
+    -fx-font-family: 'Nunito' ;
+}
+
+#AnchorStyle{
+
+}

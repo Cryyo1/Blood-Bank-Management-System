@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="682.0" styleClass="root" stylesheets="@../CSS/Login.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <ImageView fitHeight="286.0" fitWidth="340.0" layoutX="13.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Login.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorStyle" layoutX="388.0" layoutY="64.0" prefHeight="328.0" prefWidth="268.0" style="-fx-background-color: white; -fx-background-radius: 30px;" stylesheets="@../CSS/Login.css">
+         <children>
+            <Label layoutX="11.0" layoutY="285.0" prefHeight="25.0" prefWidth="167.0" text="Vous n'avez pas de compte ?" />
+            <JFXTextField fx:id="username" focusColor="#b80606" layoutX="28.0" layoutY="100.0" prefHeight="35.0" prefWidth="212.0" promptText="Nom d'utilisateur" />
+            <JFXPasswordField fx:id="password" focusColor="#b80606" layoutX="28.0" layoutY="164.0" prefHeight="35.0" prefWidth="212.0" promptText="Mot de passe" />
+            <JFXButton fx:id="login" layoutX="28.0" layoutY="236.0" onAction="#authentifier" prefHeight="25.0" prefWidth="212.0" text="Se connecter" textFill="#f5f5f5" />
+            <JFXButton id="signUpButton" fx:id="signup" layoutX="170.0" layoutY="284.0" onAction="#openSignUp" prefHeight="25.0" prefWidth="90.0" stylesheets="@../CSS/Login.css" text="Crée Compte" textFill="#b80606">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label id="label_top" alignment="CENTER" layoutX="89.0" layoutY="20.0" prefHeight="35.0" prefWidth="90.0" stylesheets="@../CSS/Login.css" text="Connexion" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.16">
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_pane" prefHeight="464.0" prefWidth="720.0" styleClass="root" stylesheets="@../CSS/main.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OrganiserDonController">
+   <children>
+      <AnchorPane prefHeight="464.0" prefWidth="200.0">
+         <children>
+            <GridPane prefHeight="464.0" prefWidth="200.0" styleClass="sidebar">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 30px;">
+                     <children>
+                        <Label fx:id="nom_complet" alignment="CENTER" layoutX="29.0" layoutY="100.0" prefHeight="17.0" prefWidth="140.0" text="Chakib Boudjema" />
+                        <JFXButton fx:id="modifier_profile" layoutX="149.0" layoutY="14.0" onAction="#openPreference" prefHeight="32.0" prefWidth="42.0" style="-fx-background-color: null;" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@../assets/manage_accounts.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Circle fx:id="avatar" fill="DODGERBLUE" layoutX="99.0" layoutY="56.0" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+                        <JFXButton fx:id="changer_image" layoutX="12.0" layoutY="15.0" onAction="#changerImage" prefHeight="32.0" prefWidth="38.0" style="-fx-background-color: null;" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="24.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@../assets/image.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="200.0" text="  Dons de sang" />
+                        <JFXButton fx:id="demanderv" alignment="BASELINE_LEFT" onAction="#openRDV" prefHeight="25.0" prefWidth="170.0" text="Demande de rv" textFill="#323131" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="historique" alignment="BASELINE_LEFT" onAction="#openorganiserDon" prefHeight="25.0" prefWidth="183.0" styleClass="sbutton" text="  Demande d'organisation" textFill="#323131" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="organisation" alignment="BASELINE_LEFT" onAction="#openorganiserDonAdmin" prefHeight="25.0" prefWidth="170.0" text="Organisation de dons" textFill="#323131" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="58.0" prefWidth="200.0" text="  Extra" />
+                        <JFXButton fx:id="liste_hopitaux" alignment="BASELINE_LEFT" onAction="#openHopital" prefHeight="25.0" prefWidth="170.0" text="Liste des Hopitaux" textFill="#323131" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="liste_baqnue" alignment="BASELINE_LEFT" onAction="#openBanque" prefHeight="25.0" prefWidth="170.0" text="Listes des Banques" textFill="#323131" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" onAction="#openStock" prefHeight="25.0" prefWidth="170.0" text="Stock" textFill="#323131" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <JFXButton fx:id="logout" layoutX="14.0" layoutY="62.0" onAction="#logoutfunction" prefHeight="27.0" prefWidth="96.0" text="Logout">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" layoutX="15.0" layoutY="2.0" onAction="#openHistorique" prefHeight="25.0" prefWidth="170.0" text="Historique des dons" textFill="#323131">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="399.0" fitWidth="480.0" layoutX="262.0" layoutY="28.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Blood_test-bro.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="262.0" layoutY="94.0" prefHeight="277.0" prefWidth="399.0" styleClass="box">
+         <children>
+            <JFXDatePicker fx:id="date" defaultColor="#890620" layoutX="199.0" layoutY="46.0" />
+            <JFXTimePicker fx:id="h_debut" defaultColor="#890620" layoutX="199.0" layoutY="86.0" />
+            <JFXTimePicker fx:id="h_fin" defaultColor="#890620" layoutX="199.0" layoutY="126.0" />
+            <JFXComboBox fx:id="location" focusColor="#890620" layoutX="199.0" layoutY="170.0" prefHeight="26.0" prefWidth="170.0" />
+            <JFXButton fx:id="valider_don" layoutX="134.0" layoutY="231.0" onAction="#valider" prefHeight="20.0" prefWidth="131.0" styleClass="sbutton" text="Valider" />
+            <Label layoutX="36.0" layoutY="60.0" text="Date :" />
+            <Label layoutX="36.0" layoutY="100.0" text="Heure début : " />
+            <Label layoutX="33.0" layoutY="143.0" text="Heure fin : " />
+            <Label layoutX="35.0" layoutY="183.0" text="Location : " />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

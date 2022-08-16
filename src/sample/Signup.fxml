@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="682.0" stylesheets="@../CSS/Login.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupController">
+   <children>
+      <ImageView fitHeight="286.0" fitWidth="340.0" layoutX="23.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Login.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="360.0" layoutY="25.0" prefHeight="405.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <children>
+            <JFXTextField fx:id="fullname" focusColor="#b80606" layoutX="14.0" layoutY="90.0" prefHeight="33.0" prefWidth="273.0" promptText="Nom Complet" />
+            <JFXTextField fx:id="username" focusColor="#b80606" layoutX="14.0" layoutY="136.0" prefHeight="33.0" prefWidth="273.0" promptText="Nom d'utilisateur" />
+            <JFXTextField fx:id="email" focusColor="#b80606" layoutX="14.0" layoutY="179.0" prefHeight="33.0" prefWidth="273.0" promptText="Email" />
+            <Label layoutX="14.0" layoutY="219.0" prefHeight="33.0" prefWidth="92.0" text="Groupe Sanguin:" />
+            <Label layoutX="14.0" layoutY="253.0" prefHeight="33.0" prefWidth="117.0" text="Rhésus:" />
+            <JFXComboBox fx:id="groupe_sanguin" focusColor="#b80606" layoutX="191.0" layoutY="219.0" prefHeight="25.0" prefWidth="67.0" />
+            <JFXComboBox fx:id="Rh" focusColor="#b80606" layoutX="191.0" layoutY="254.0" prefHeight="25.0" prefWidth="67.0" />
+            <JFXPasswordField fx:id="password" focusColor="#b80606" layoutX="14.0" layoutY="292.0" prefHeight="33.0" prefWidth="273.0" promptText="Mots de passe" />
+            <JFXButton fx:id="valider" layoutX="14.0" layoutY="359.0" onAction="#creeCompte" prefHeight="25.0" prefWidth="273.0" stylesheets="@../CSS/Login.css" text="Créer" textFill="WHITE" />
+            <Label id="label_top" alignment="CENTER" layoutX="68.0" layoutY="31.0" prefHeight="35.0" prefWidth="165.0" stylesheets="@../CSS/Login.css" text="Créer votre compte" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+.root{
+    -fx-font-family: "Open Sans";
+}
+
+.anchor {
+    -fx-background-size : 1150px;
+}
+.gradient1 {
+    -fx-background-color: rgb(7,1,96);
+
+}
+.gradient2{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, rgba(7,1,96,0.8) , rgba(0,255,102,0.7) );
+}
+.jfx-tab-pane .headers-region {
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-effect: null;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-effect: null;
+}
+.jfx-tab-pane .depth-container {
+    -fx-effect: none;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: red;
+    -fx-pref-height: 2;
+    -fx-pref-width: 2;
+}
+
